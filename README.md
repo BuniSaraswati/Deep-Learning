@@ -11,7 +11,9 @@ This repository contains four Jupyter notebooks and code related to image classi
 3. **Cats_and_Dog**: This notebook focuses on classifying images into pictures of cats or dogs. We build an image classifier using the `tf.keras.Sequential` model and load data using `tf.keras.preprocessing.image.ImageDataGenerator`. This notebook does not use data augmentation.
 
 4. **using_Image_augmentation**: Similar to the third notebook, this one also classifies images into pictures of cats or dogs. However, it incorporates data augmentation techniques to enhance the model's performance.
-
+   
+6. **Transfer_Learning_MobileNet**: In this notebook, we utilize a TensorFlow Hub model (MobileNet v2) for Dogs vs. Cats dataset classification. We perform simple transfer learning by downloading the MobileNet model, creating a Keras model from it, and evaluating its performance. The MobileNet model expects images of 224 × 224 pixels in 3 color channels (RGB).
+   
 ## Data
 
 The first and second notebooks in this repository use the [Fashion MNIST dataset](https://github.com/zalandoresearch/fashion-mnist). Fashion MNIST contains 70,000 grayscale images in 10 categories. Each image represents an individual article of clothing at a low resolution of 28 x 28 pixels. Here's what you can expect to find in the dataset:
